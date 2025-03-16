@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OdontoPrev</name>
+    </assembly>
+    <members>
+        <member name="T:OdontoPrev.Controllers.BrushingRecordsController">
+            <summary>
+            Controller para gerenciar registros de escovação.
+            </summary>
+        </member>
+        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.GetBrushingRecords">
+            <summary>
+            Retorna todos os registros de escovação.
+            </summary>
+            <returns>Uma lista de registros de escovação.</returns>
+        </member>
+        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.GetBrushingRecord(System.Int32)">
+            <summary>
+            Retorna um registro de escovação específico pelo ID.
+            </summary>
+            <param name="id">ID do registro de escovação.</param>
+            <returns>O registro de escovação correspondente ao ID.</returns>
+            <response code="200">Registro encontrado.</response>
+            <response code="404">Registro não encontrado.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.PostBrushingRecord(OdontoPrev.Models.BrushingRecord)">
+            <summary>
+            Cria um novo registro de escovação.
+            </summary>
+            <param name="brushingRecord">Dados do registro de escovação a ser criado.</param>
+            <returns>O registro de escovação criado.</returns>
+            <response code="201">Registro criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="404">Usuário não encontrado.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.PutBrushingRecord(System.Int32,OdontoPrev.Models.BrushingRecord)">
+            <summary>
+            Atualiza um registro de escovação existente.
+            </summary>
+            <param name="id">ID do registro de escovação a ser atualizado.</param>
+            <param name="brushingRecord">Novos dados do registro de escovação.</param>
+            <returns>Nenhum conteúdo.</returns>
+            <response code="204">Registro atualizado com sucesso.</response>
+            <response code="400">ID inválido.</response>
+            <response code="404">Registro não encontrado.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.DeleteBrushingRecord(System.Int32)">
+            <summary>
+            Exclui um registro de escovação específico.
+            </summary>
+            <param name="id">ID do registro de escovação a ser excluído.</param>
+            <returns>Nenhum conteúdo.</returns>
+            <response code="204">Registro excluído com sucesso.</response>
+            <response code="404">Registro não encontrado.</response>
+        </member>
+        <member name="T:OdontoPrev.Controllers.UsersController">
+            <summary>
+            Controller para gerenciar usuários.
+            </summary>
+        </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.GetUsers">
+            <summary>
+            Retorna todos os usuários.
+            </summary>
+            <returns>Uma lista de usuários.</returns>
+        </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Retorna um usuário específico pelo ID.
+            </summary>
+            <param name="id">ID do usuário.</param>
+            <returns>O usuário correspondente ao ID.</returns>
+            <response code="200">Usuário encontrado.</response>
+            <response code="404">Usuário não encontrado.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.PostUser(OdontoPrev.Models.User)">
+            <summary>
+            Cria um novo usuário.
+            </summary>
+            <param name="user">Dados do usuário a ser criado.</param>
+            <returns>O usuário criado.</returns>
+            <response code="201">Usuário criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.PutUser(System.Int32,OdontoPrev.Models.User)">
+            <summary>
+            Atualiza um usuário existente.
+            </summary>
+            <param name="id">ID do usuário a ser atualizado.</param>
+            <param name="user">Novos dados do usuário.</param>
+            <returns>Nenhum conteúdo.</returns>
+            <response code="204">Usuário atualizado com sucesso.</response>
+            <response code="400">ID inválido.</response>
+            <response code="404">Usuário não encontrado.</response>
+        </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Exclui um usuário específico.
+            </summary>
+            <param name="id">ID do usuário a ser excluído.</param>
+            <returns>Nenhum conteúdo.</returns>
+            <response code="204">Usuário excluído com sucesso.</response>
+            <response code="404">Usuário não encontrado.</response>
+        </member>
+        <member name="T:OdontoPrev.Migrations.migrationInicial">
+            <inheritdoc />
+        </member>
+        <member name="M:OdontoPrev.Migrations.migrationInicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:OdontoPrev.Migrations.migrationInicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:OdontoPrev.Migrations.migrationInicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
