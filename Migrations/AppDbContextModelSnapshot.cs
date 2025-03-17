@@ -35,14 +35,10 @@ namespace OdontoPrev.Migrations
 
                     b.Property<string>("Period")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("NUMBER(10)");
+                        .HasMaxLength(10)
+                        .HasColumnType("NVARCHAR2(10)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("BrushingRecords");
                 });
@@ -57,7 +53,8 @@ namespace OdontoPrev.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR2(100)");
 
                     b.Property<int>("Points")
                         .HasColumnType("NUMBER(10)");
@@ -65,22 +62,6 @@ namespace OdontoPrev.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("OdontoPrev.Models.BrushingRecord", b =>
-                {
-                    b.HasOne("OdontoPrev.Models.User", "User")
-                        .WithMany("BrushingRecords")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("OdontoPrev.Models.User", b =>
-                {
-                    b.Navigation("BrushingRecords");
                 });
 #pragma warning restore 612, 618
         }

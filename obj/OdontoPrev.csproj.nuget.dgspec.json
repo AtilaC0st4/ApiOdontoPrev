@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Átila\\source\\repos\\OdontoPrev\\OdontoPrev.csproj": {}
+    "C:\\Users\\Átila\\source\\repos\\ApiOdontoPrev\\OdontoPrev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Átila\\source\\repos\\OdontoPrev\\OdontoPrev.csproj": {
+    "C:\\Users\\Átila\\source\\repos\\ApiOdontoPrev\\OdontoPrev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Átila\\source\\repos\\OdontoPrev\\OdontoPrev.csproj",
+        "projectUniqueName": "C:\\Users\\Átila\\source\\repos\\ApiOdontoPrev\\OdontoPrev.csproj",
         "projectName": "OdontoPrev",
-        "projectPath": "C:\\Users\\Átila\\source\\repos\\OdontoPrev\\OdontoPrev.csproj",
+        "projectPath": "C:\\Users\\Átila\\source\\repos\\ApiOdontoPrev\\OdontoPrev.csproj",
         "packagesPath": "C:\\Users\\Átila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Átila\\source\\repos\\OdontoPrev\\obj\\",
+        "outputPath": "C:\\Users\\Átila\\source\\repos\\ApiOdontoPrev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Átila\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,6 +71,10 @@
               "version": "[9.23.60, )"
             },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[7.3.1, )"
             }

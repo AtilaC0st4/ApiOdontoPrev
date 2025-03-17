@@ -1,37 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\",
+  "WorkspaceRootPath": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\apiodontoprev\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\apiodontoprev\\controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\models\\brushingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\apiodontoprev\\models\\brushingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\brushingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\odontoprev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\apiodontoprev\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\source\\repos\\apiodontoprev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,103 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwAgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:27:16.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-16T01:13:46.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-16T01:13:48.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA8AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:12:30.945Z",
+              "WhenOpened": "2025-03-17T01:11:31.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "BrushingRecordsController.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Controllers\\BrushingRecordsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BrushingRecordsController.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Controllers\\BrushingRecordsController.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
               "RelativeToolTip": "Controllers\\BrushingRecordsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI4AAAABAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwA0AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T01:04:41.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "BrushingRecord.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Models\\BrushingRecord.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
               "RelativeDocumentMoniker": "Models\\BrushingRecord.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Models\\BrushingRecord.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
               "RelativeToolTip": "Models\\BrushingRecord.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T00:59:54.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAcwH8AAAABAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwAoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T23:25:21.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\OdontoPrev\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\source\\repos\\ApiOdontoPrev\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T20:33:34.522Z",
               "EditorCaption": ""
