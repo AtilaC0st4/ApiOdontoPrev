@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OdontoPrev.Models;
-using System.Collections.Generic;
-using System.Linq;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace OdontoPrev.Controllers
@@ -58,6 +56,41 @@ namespace OdontoPrev.Controllers
             user.Id = Users.Count + 1;
             Users.Add(user);
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
+        }
+
+
+        /// <summary>
+        /// Atualiza um usuário existente pelo ID.
+        /// </summary>
+        /// <param name="id">O ID do usuário a ser atualizado.</param>
+        /// <param name="updatedUser">Os dados atualizados do usuário.</param>
+        /// <returns>O usuário atualizado.</returns>
+        [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Atualizar um usuário pelo ID", Description = "Atualiza os dados de um usuário existente com base no ID fornecido.")]
+        [ProducesResponseType(200, Type = typeof(User))] // Resposta de sucesso
+        [ProducesResponseType(400)] // Requisição inválida (IDs não correspondem)
+        [ProducesResponseType(404)] // Usuário não encontrado
+        public ActionResult<User> PutUser(int id, User updatedUser)
+        {
+            // Verifica se o ID da rota corresponde ao ID do usuário enviado no corpo da requisição
+            if (id != updatedUser.Id)
+            {
+                return BadRequest("O ID da rota não corresponde ao ID do usuário.");
+            }
+
+            // Procura o usuário existente na lista
+            var existingUser = Users.FirstOrDefault(u => u.Id == id);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            // Atualiza todas as propriedades do usuário existente com os novos valores
+            existingUser.Name = updatedUser.Name;
+            existingUser.Points = updatedUser.Points;
+            // Adicione aqui outras propriedades que precisam ser atualizadas
+
+            return Ok(existingUser);
         }
 
         /// <summary>

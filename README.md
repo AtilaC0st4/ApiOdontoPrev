@@ -85,9 +85,10 @@ A API foi desenvolvida utilizando uma **arquitetura monolítica**, escolhida por
    - Body:
      ```json
      {
-       "name": "João Silva",
-       "points": 0
-     }
+  "id": 0,
+  "name": "string",
+  "points": 0
+}
      ```
 
 2. **Adicionar um Registro de Escovação**:
@@ -95,10 +96,10 @@ A API foi desenvolvida utilizando uma **arquitetura monolítica**, escolhida por
    - Body:
      ```json
      {
-       "brushingTime": "2023-10-01T08:00:00",
-       "period": "Morning",
-       "userId": 1
-     }
+  "id": 0,
+  "brushingTime": "2025-03-17T20:38:33.366Z",
+  "period": "string"
+}
      ```
 
 

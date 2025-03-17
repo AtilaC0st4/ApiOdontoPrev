@@ -7,7 +7,7 @@ namespace OdontoPrev.Models
         [Key] // Define a chave primária
         public int Id { get; set; }
 
-        [Required] /
+        [Required] 
         [StringLength(100)] 
         public string Name { get; set; }
 

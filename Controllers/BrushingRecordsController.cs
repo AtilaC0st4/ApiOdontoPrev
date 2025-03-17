@@ -1,10 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using OdontoPrev.Data;
 using OdontoPrev.Models;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace OdontoPrev.Controllers

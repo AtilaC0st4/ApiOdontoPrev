@@ -51,6 +51,14 @@
             <param name="user">Os dados do usuário a ser criado.</param>
             <returns>O usuário criado.</returns>
         </member>
+        <member name="M:OdontoPrev.Controllers.UsersController.PutUser(System.Int32,OdontoPrev.Models.User)">
+            <summary>
+            Atualiza um usuário existente pelo ID.
+            </summary>
+            <param name="id">O ID do usuário a ser atualizado.</param>
+            <param name="updatedUser">Os dados atualizados do usuário.</param>
+            <returns>O usuário atualizado.</returns>
+        </member>
         <member name="M:OdontoPrev.Controllers.UsersController.DeleteUser(System.Int32)">
             <summary>
             Exclui um usuário pelo ID.

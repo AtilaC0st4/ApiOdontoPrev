@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\workstation\\source\\repos\\ApiOdontoPrev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\workstation\\source\\repos\\apiodontoprev\\controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\workstation\\source\\repos\\apiodontoprev\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,25 +19,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BrushingRecordsController.cs",
-              "DocumentMoniker": "C:\\Users\\workstation\\source\\repos\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BrushingRecordsController.cs",
-              "ToolTip": "C:\\Users\\workstation\\source\\repos\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
-              "RelativeToolTip": "Controllers\\BrushingRecordsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwE0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:57:56.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\workstation\\source\\repos\\ApiOdontoPrev\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\workstation\\source\\repos\\ApiOdontoPrev\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T20:30:10.735Z",
               "EditorCaption": ""
