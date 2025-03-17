@@ -10,7 +10,7 @@
 ---
 
 ## Descrição do Projeto
-A **OdontoPrev API** é uma aplicação desenvolvida em **ASP.NET Core Web API** que permite aos usuários registrar escovações de dentes e acumular pontos. A cada registro de escovação (manhã, tarde ou noite), o usuário ganha 10 pontos. A API também oferece endpoints para gerenciar usuários e seus registros de escovação.
+A **OdontoPrev API** é uma aplicação desenvolvida em **ASP.NET Core Web API** que permite aos usuários registrar escovações de dentes. A API também oferece endpoints para gerenciar usuários e seus registros de escovação.
 
 ---
 
@@ -20,7 +20,7 @@ A API foi desenvolvida utilizando uma **arquitetura monolítica**, escolhida por
 ### Justificativa da Arquitetura Monolítica
 1. **Simplicidade**: A arquitetura monolítica é mais fácil de desenvolver, testar e implantar para projetos de pequeno e médio porte.
 2. **Manutenção**: Como o projeto não possui requisitos complexos de escalabilidade ou isolamento de funcionalidades, uma arquitetura monolítica é mais eficiente.
-3. **Integração**: Todos os componentes (controllers, models, serviços) estão no mesmo projeto, o que facilita a comunicação entre eles.
+3. **Integração**: Todos os componentes (controllers, models) estão no mesmo projeto, o que facilita a comunicação entre eles.
 
 ### Componentes da Arquitetura
 - **Controllers**: Responsáveis por receber as requisições HTTP e retornar as respostas adequadas.
@@ -101,22 +101,5 @@ A API foi desenvolvida utilizando uma **arquitetura monolítica**, escolhida por
      }
      ```
 
-3. **Verificar Pontos do Usuário**:
-   - Endpoint: `GET /api/Users/1`
-   - Resposta esperada:
-     ```json
-     {
-       "id": 1,
-       "name": "João Silva",
-       "points": 10,
-       "brushingRecords": [
-         {
-           "id": 1,
-           "brushingTime": "2023-10-01T08:00:00",
-           "period": "Morning",
-           "userId": 1
-         }
-       ]
-     }
-     ```
+
 
