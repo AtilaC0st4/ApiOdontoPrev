@@ -15,6 +15,14 @@ namespace OdontoPrev.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>()
+     .HasMany(u => u.BrushingRecords)
+     .WithOne(br => br.User!)
+     .HasForeignKey(br => br.UserId)
+     .OnDelete(DeleteBehavior.Cascade);
+
         }
+
     }
 }

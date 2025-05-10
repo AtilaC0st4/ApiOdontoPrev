@@ -2,6 +2,7 @@
 using OdontoPrev.Data;
 using OdontoPrev.Models;
 using Swashbuckle.AspNetCore.Annotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace OdontoPrev.Controllers
 {
@@ -26,7 +27,10 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(200, Type = typeof(List<BrushingRecord>))]
         public ActionResult<IEnumerable<BrushingRecord>> GetBrushingRecords()
         {
-            return Ok(_context.BrushingRecords.ToList());
+            var brushingRecords = _context.BrushingRecords
+                                          .Include(br => br.User) // Inclui o usuário relacionado
+                                          .ToList();
+            return Ok(brushingRecords);
         }
 
         /// <summary>
@@ -40,12 +44,16 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(404)]
         public ActionResult<BrushingRecord> GetBrushingRecord(int id)
         {
-            var record = _context.BrushingRecords.FirstOrDefault(b => b.Id == id);
-            if (record == null)
+            var brushingRecord = _context.BrushingRecords
+                                         .Include(br => br.User) // Inclui o usuário relacionado
+                                         .FirstOrDefault(br => br.Id == id);
+
+            if (brushingRecord == null)
             {
-                return NotFound();
+                return NotFound("Registro de escovação não encontrado.");
             }
-            return Ok(record);
+
+            return Ok(brushingRecord);
         }
 
         /// <summary>
@@ -59,8 +67,21 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(400)]
         public ActionResult<BrushingRecord> PostBrushingRecord(BrushingRecord record)
         {
+            if (record == null)
+            {
+                return BadRequest("Os dados do registro de escovação são inválidos.");
+            }
+
+            // Verifica se o usuário existe
+            var user = _context.Users.FirstOrDefault(u => u.Id == record.UserId);
+            if (user == null)
+            {
+                return BadRequest("Usuário não encontrado.");
+            }
+
             _context.BrushingRecords.Add(record);
-            _context.SaveChanges(); // Salva as alterações no banco de dados
+            _context.SaveChanges();
+
             return CreatedAtAction(nameof(GetBrushingRecord), new { id = record.Id }, record);
         }
 
@@ -82,17 +103,17 @@ namespace OdontoPrev.Controllers
                 return BadRequest("O ID da rota não corresponde ao ID do registro de escovação.");
             }
 
-            var existingRecord = _context.BrushingRecords.FirstOrDefault(b => b.Id == id);
+            var existingRecord = _context.BrushingRecords.FirstOrDefault(br => br.Id == id);
             if (existingRecord == null)
             {
-                return NotFound();
+                return NotFound("Registro de escovação não encontrado.");
             }
 
             // Atualiza as propriedades do registro existente com os novos valores
             existingRecord.BrushingTime = updatedRecord.BrushingTime;
-            existingRecord.Period = updatedRecord.Period;
+            existingRecord.UserId = updatedRecord.UserId; // Atualiza o ID do usuário, se necessário
 
-            _context.SaveChanges(); // Salva as alterações no banco de dados
+            _context.SaveChanges();
 
             return Ok(existingRecord);
         }
@@ -108,13 +129,15 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(404)]
         public ActionResult DeleteBrushingRecord(int id)
         {
-            var record = _context.BrushingRecords.FirstOrDefault(b => b.Id == id);
-            if (record == null)
+            var brushingRecord = _context.BrushingRecords.FirstOrDefault(br => br.Id == id);
+            if (brushingRecord == null)
             {
-                return NotFound();
+                return NotFound("Registro de escovação não encontrado.");
             }
-            _context.BrushingRecords.Remove(record);
-            _context.SaveChanges(); // Salva as alterações no banco de dados
+
+            _context.BrushingRecords.Remove(brushingRecord);
+            _context.SaveChanges();
+
             return NoContent();
         }
     }

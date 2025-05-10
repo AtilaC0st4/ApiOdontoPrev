@@ -81,6 +81,49 @@
   },
   {
     "ContainingType": "OdontoPrev.Controllers.BrushingRecordsController",
+    "Method": "PutBrushingRecord",
+    "RelativePath": "api/BrushingRecords/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedRecord",
+        "Type": "OdontoPrev.Models.BrushingRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoPrev.Models.BrushingRecord",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoPrev.Controllers.BrushingRecordsController",
     "Method": "DeleteBrushingRecord",
     "RelativePath": "api/BrushingRecords/{id}",
     "HttpMethod": "DELETE",
@@ -118,11 +161,18 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[OdontoPrev.Models.User, OdontoPrev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[User, OdontoPrev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -136,20 +186,20 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "OdontoPrev.Models.User",
+        "Type": "User",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "OdontoPrev.Models.User",
+        "Type": "User",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 201
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "System.String",
         "MediaTypes": [
           "application/json"
         ],
@@ -173,14 +223,14 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "OdontoPrev.Models.User",
+        "Type": "User",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "System.String",
         "MediaTypes": [
           "application/json"
         ],
@@ -203,27 +253,27 @@
       },
       {
         "Name": "updatedUser",
-        "Type": "OdontoPrev.Models.User",
+        "Type": "User",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "OdontoPrev.Models.User",
+        "Type": "User",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "System.String",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 400
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "System.String",
         "MediaTypes": [
           "application/json"
         ],
@@ -252,7 +302,38 @@
         "StatusCode": 204
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "System.String",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoPrev.Controllers.UsersController",
+    "Method": "GetUserLevel",
+    "RelativePath": "api/Users/{id}/level",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.String",
         "MediaTypes": [
           "application/json"
         ],

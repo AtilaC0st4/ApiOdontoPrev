@@ -1,18 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using OdontoPrev.Models;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace OdontoPrev.Models
+public class User
 {
-    public class User
-    {
-        [Key] // Define a chave primária
-        public int Id { get; set; }
+    [Key]
+    public int Id { get; set; }
 
-        [Required] 
-        [StringLength(100)] 
-        public string Name { get; set; }
+    [Required]
+    [StringLength(100)]
+    public string Name { get; set; }
 
-        [Required]
-        public int Points { get; set; }
-    }
+    [Required]
+    public int Points { get; set; }
 
+    // Propriedade somente leitura
+    [NotMapped] // Isso impede que o EF Core tente salvar esse campo no banco
+    public int Level => Points / 100;
+
+    // Se quiser armazenar escovações relacionadas
+    public ICollection<BrushingRecord>? BrushingRecords { get; set; }
 }
