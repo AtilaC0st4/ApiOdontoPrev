@@ -26,9 +26,12 @@ namespace OdontoPrev.Controllers
         [SwaggerOperation(Summary = "Obter todos os usuários", Description = "Retorna uma lista de todos os usuários cadastrados.")]
         [ProducesResponseType(200, Type = typeof(List<User>))]
         [ProducesResponseType(404, Type = typeof(string))]
-        public ActionResult<IEnumerable<User>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var users = _context.Users.Include(u => u.BrushingRecords).ToList();
+            var users = await _context.Users
+                                      .Include(u => u.BrushingRecords)
+                                      .ToListAsync();
+
             if (!users.Any())
             {
                 return NotFound("Nenhum usuário encontrado.");
@@ -46,13 +49,17 @@ namespace OdontoPrev.Controllers
         [SwaggerOperation(Summary = "Obter um usuário pelo ID", Description = "Retorna um usuário específico com base no ID fornecido.")]
         [ProducesResponseType(200, Type = typeof(User))]
         [ProducesResponseType(404, Type = typeof(string))]
-        public ActionResult<User> GetUser(int id)
+        public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = _context.Users.Include(u => u.BrushingRecords).FirstOrDefault(u => u.Id == id);
+            var user = await _context.Users
+                                     .Include(u => u.BrushingRecords)
+                                     .FirstOrDefaultAsync(u => u.Id == id);
+
             if (user == null)
             {
                 return NotFound("Usuário não encontrado.");
             }
+
             return Ok(user);
         }
 
@@ -65,7 +72,7 @@ namespace OdontoPrev.Controllers
         [SwaggerOperation(Summary = "Criar um novo usuário", Description = "Adiciona um novo usuário à lista.")]
         [ProducesResponseType(201, Type = typeof(User))]
         [ProducesResponseType(400, Type = typeof(string))]
-        public ActionResult<User> PostUser(User user)
+        public async Task<ActionResult<User>> PostUser(User user)
         {
             if (user == null)
             {
@@ -73,7 +80,7 @@ namespace OdontoPrev.Controllers
             }
 
             _context.Users.Add(user);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
         }
@@ -89,24 +96,23 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(200, Type = typeof(User))]
         [ProducesResponseType(400, Type = typeof(string))]
         [ProducesResponseType(404, Type = typeof(string))]
-        public ActionResult<User> PutUser(int id, User updatedUser)
+        public async Task<ActionResult<User>> PutUser(int id, User updatedUser)
         {
             if (id != updatedUser.Id)
             {
                 return BadRequest("O ID da rota não corresponde ao ID do usuário.");
             }
 
-            var existingUser = _context.Users.FirstOrDefault(u => u.Id == id);
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (existingUser == null)
             {
                 return NotFound("Usuário não encontrado.");
             }
 
-            // Atualiza as propriedades do usuário existente com os novos valores
             existingUser.Name = updatedUser.Name;
             existingUser.Points = updatedUser.Points;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok(existingUser);
         }
@@ -120,16 +126,16 @@ namespace OdontoPrev.Controllers
         [SwaggerOperation(Summary = "Excluir um usuário pelo ID", Description = "Remove um usuário com base no ID fornecido.")]
         [ProducesResponseType(204)]
         [ProducesResponseType(404, Type = typeof(string))]
-        public ActionResult DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
             {
                 return NotFound("Usuário não encontrado.");
             }
 
             _context.Users.Remove(user);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
@@ -143,9 +149,9 @@ namespace OdontoPrev.Controllers
         [SwaggerOperation(Summary = "Obter o nível do usuário", Description = "Retorna o nível do usuário com base na pontuação.")]
         [ProducesResponseType(200, Type = typeof(int))]
         [ProducesResponseType(404, Type = typeof(string))]
-        public ActionResult<int> GetUserLevel(int id)
+        public async Task<ActionResult<int>> GetUserLevel(int id)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
             {
                 return NotFound("Usuário não encontrado.");

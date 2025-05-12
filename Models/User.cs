@@ -14,10 +14,16 @@ public class User
     [Required]
     public int Points { get; set; }
 
-    // Propriedade somente leitura
-    [NotMapped] // Isso impede que o EF Core tente salvar esse campo no banco
+    // Propriedade somente leitura, calculada a partir dos pontos
+    [NotMapped]
     public int Level => Points / 100;
 
     // Se quiser armazenar escovações relacionadas
     public ICollection<BrushingRecord>? BrushingRecords { get; set; }
+
+    // Método para atualizar os pontos (opcional)
+    public void AddPoints(int additionalPoints)
+    {
+        Points += additionalPoints;
+    }
 }

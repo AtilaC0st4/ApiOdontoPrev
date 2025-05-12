@@ -4,41 +4,6 @@
         <name>OdontoPrev</name>
     </assembly>
     <members>
-        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.GetBrushingRecords">
-            <summary>
-            Obtém todos os registros de escovação.
-            </summary>
-            <returns>Uma lista de registros de escovação.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.GetBrushingRecord(System.Int32)">
-            <summary>
-            Obtém um registro de escovação pelo ID.
-            </summary>
-            <param name="id">O ID do registro de escovação.</param>
-            <returns>O registro de escovação correspondente ao ID.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.PostBrushingRecord(OdontoPrev.Models.BrushingRecord)">
-            <summary>
-            Cria um novo registro de escovação.
-            </summary>
-            <param name="record">Os dados do registro de escovação a ser criado.</param>
-            <returns>O registro de escovação criado.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.PutBrushingRecord(System.Int32,OdontoPrev.Models.BrushingRecord)">
-            <summary>
-            Atualiza um registro de escovação existente pelo ID.
-            </summary>
-            <param name="id">O ID do registro de escovação a ser atualizado.</param>
-            <param name="updatedRecord">Os dados atualizados do registro de escovação.</param>
-            <returns>O registro de escovação atualizado.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.BrushingRecordsController.DeleteBrushingRecord(System.Int32)">
-            <summary>
-            Exclui um registro de escovação pelo ID.
-            </summary>
-            <param name="id">O ID do registro de escovação a ser excluído.</param>
-            <returns>Nenhum conteúdo.</returns>
-        </member>
         <member name="M:OdontoPrev.Controllers.UsersController.GetUsers">
             <summary>
             Obtém todos os usuários.

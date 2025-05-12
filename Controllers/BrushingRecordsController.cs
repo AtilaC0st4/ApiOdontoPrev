@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OdontoPrev.Data;
 using OdontoPrev.Models;
 using Swashbuckle.AspNetCore.Annotations;
-using Microsoft.EntityFrameworkCore;
 
 namespace OdontoPrev.Controllers
 {
@@ -18,127 +18,114 @@ namespace OdontoPrev.Controllers
             _context = context;
         }
 
-        /// <summary>
-        /// Obtém todos os registros de escovação.
-        /// </summary>
-        /// <returns>Uma lista de registros de escovação.</returns>
         [HttpGet]
-        [SwaggerOperation(Summary = "Obter todos os registros de escovação", Description = "Retorna uma lista de todos os registros de escovação cadastrados.")]
-        [ProducesResponseType(200, Type = typeof(List<BrushingRecord>))]
-        public ActionResult<IEnumerable<BrushingRecord>> GetBrushingRecords()
+        [SwaggerOperation(Summary = "Listar todos os registros de escovação")]
+        public async Task<ActionResult<IEnumerable<BrushingRecord>>> GetBrushingRecords()
         {
-            var brushingRecords = _context.BrushingRecords
-                                          .Include(br => br.User) // Inclui o usuário relacionado
-                                          .ToList();
-            return Ok(brushingRecords);
+            return await _context.BrushingRecords.Include(b => b.User).ToListAsync();
         }
 
-        /// <summary>
-        /// Obtém um registro de escovação pelo ID.
-        /// </summary>
-        /// <param name="id">O ID do registro de escovação.</param>
-        /// <returns>O registro de escovação correspondente ao ID.</returns>
         [HttpGet("{id}")]
-        [SwaggerOperation(Summary = "Obter um registro de escovação pelo ID", Description = "Retorna um registro de escovação específico com base no ID fornecido.")]
-        [ProducesResponseType(200, Type = typeof(BrushingRecord))]
-        [ProducesResponseType(404)]
-        public ActionResult<BrushingRecord> GetBrushingRecord(int id)
+        [SwaggerOperation(Summary = "Buscar um registro de escovação por ID")]
+        public async Task<ActionResult<BrushingRecord>> GetBrushingRecord(int id)
         {
-            var brushingRecord = _context.BrushingRecords
-                                         .Include(br => br.User) // Inclui o usuário relacionado
-                                         .FirstOrDefault(br => br.Id == id);
-
-            if (brushingRecord == null)
-            {
-                return NotFound("Registro de escovação não encontrado.");
-            }
-
-            return Ok(brushingRecord);
-        }
-
-        /// <summary>
-        /// Cria um novo registro de escovação.
-        /// </summary>
-        /// <param name="record">Os dados do registro de escovação a ser criado.</param>
-        /// <returns>O registro de escovação criado.</returns>
-        [HttpPost]
-        [SwaggerOperation(Summary = "Criar um novo registro de escovação", Description = "Adiciona um novo registro de escovação à lista.")]
-        [ProducesResponseType(201, Type = typeof(BrushingRecord))]
-        [ProducesResponseType(400)]
-        public ActionResult<BrushingRecord> PostBrushingRecord(BrushingRecord record)
-        {
+            var record = await _context.BrushingRecords.Include(b => b.User).FirstOrDefaultAsync(b => b.Id == id);
             if (record == null)
             {
-                return BadRequest("Os dados do registro de escovação são inválidos.");
+                return NotFound("Registro não encontrado.");
             }
 
-            // Verifica se o usuário existe
-            var user = _context.Users.FirstOrDefault(u => u.Id == record.UserId);
-            if (user == null)
-            {
-                return BadRequest("Usuário não encontrado.");
-            }
-
-            _context.BrushingRecords.Add(record);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(GetBrushingRecord), new { id = record.Id }, record);
+            return Ok(record);
         }
 
-        /// <summary>
-        /// Atualiza um registro de escovação existente pelo ID.
-        /// </summary>
-        /// <param name="id">O ID do registro de escovação a ser atualizado.</param>
-        /// <param name="updatedRecord">Os dados atualizados do registro de escovação.</param>
-        /// <returns>O registro de escovação atualizado.</returns>
+      [HttpPost]
+[SwaggerOperation(Summary = "Criar um novo registro de escovação")]
+public async Task<ActionResult<BrushingRecord>> PostBrushingRecord(BrushingRecord record)
+{
+    if (record == null)
+    {
+        return BadRequest("Dados inválidos.");
+    }
+
+    // Encontra o usuário
+    var user = await _context.Users.FindAsync(record.UserId);
+
+    if (user == null)
+    {
+        return NotFound("Usuário não encontrado.");
+    }
+
+    // Adiciona o novo registro de escovação
+    _context.BrushingRecords.Add(record);
+
+    // Atualiza os pontos do usuário
+    user.AddPoints(10); // Adiciona 10 pontos pela escovação
+
+    // Atualiza o usuário
+    _context.Users.Update(user);
+
+    // Salva as alterações no banco de dados
+    await _context.SaveChangesAsync();
+
+    return CreatedAtAction(nameof(GetBrushingRecord), new { id = record.Id }, record);
+}
+
+
+
         [HttpPut("{id}")]
-        [SwaggerOperation(Summary = "Atualizar um registro de escovação pelo ID", Description = "Atualiza os dados de um registro de escovação existente com base no ID fornecido.")]
-        [ProducesResponseType(200, Type = typeof(BrushingRecord))]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(404)]
-        public ActionResult<BrushingRecord> PutBrushingRecord(int id, BrushingRecord updatedRecord)
+        [SwaggerOperation(Summary = "Atualizar um registro de escovação")]
+        public async Task<ActionResult<BrushingRecord>> PutBrushingRecord(int id, BrushingRecord updatedRecord)
         {
             if (id != updatedRecord.Id)
             {
-                return BadRequest("O ID da rota não corresponde ao ID do registro de escovação.");
+                return BadRequest("ID inconsistente.");
             }
 
-            var existingRecord = _context.BrushingRecords.FirstOrDefault(br => br.Id == id);
+            var existingRecord = await _context.BrushingRecords.FindAsync(id);
             if (existingRecord == null)
             {
-                return NotFound("Registro de escovação não encontrado.");
+                return NotFound("Registro não encontrado.");
             }
 
-            // Atualiza as propriedades do registro existente com os novos valores
             existingRecord.BrushingTime = updatedRecord.BrushingTime;
-            existingRecord.UserId = updatedRecord.UserId; // Atualiza o ID do usuário, se necessário
+            existingRecord.UserId = updatedRecord.UserId;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok(existingRecord);
         }
 
-        /// <summary>
-        /// Exclui um registro de escovação pelo ID.
-        /// </summary>
-        /// <param name="id">O ID do registro de escovação a ser excluído.</param>
-        /// <returns>Nenhum conteúdo.</returns>
         [HttpDelete("{id}")]
-        [SwaggerOperation(Summary = "Excluir um registro de escovação pelo ID", Description = "Remove um registro de escovação com base no ID fornecido.")]
-        [ProducesResponseType(204)]
-        [ProducesResponseType(404)]
-        public ActionResult DeleteBrushingRecord(int id)
+        [SwaggerOperation(Summary = "Deletar um registro de escovação")]
+        public async Task<IActionResult> DeleteBrushingRecord(int id)
         {
-            var brushingRecord = _context.BrushingRecords.FirstOrDefault(br => br.Id == id);
-            if (brushingRecord == null)
+            var record = await _context.BrushingRecords.FindAsync(id);
+            if (record == null)
             {
-                return NotFound("Registro de escovação não encontrado.");
+                return NotFound("Registro não encontrado.");
             }
 
-            _context.BrushingRecords.Remove(brushingRecord);
-            _context.SaveChanges();
+            // Encontrar o usuário relacionado
+            var user = await _context.Users.FindAsync(record.UserId);
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
+
+            // Subtrair os pontos do usuário
+            user.Points -= 10; // Remova 10 pontos (ou o valor correto de pontos que você atribui por escovação)
+
+            // Remover o registro de escovação
+            _context.BrushingRecords.Remove(record);
+
+            // Forçar a atualização do usuário
+            _context.Users.Update(user);
+
+            // Salvar as mudanças no banco de dados
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
     }
 }

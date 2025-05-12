@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\workstation\\Documents\\Átila\\ApiOdontoPrev\\OdontoPrev.csproj": {}
+    "C:\\Users\\Átila\\OneDrive\\Área de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\workstation\\Documents\\Átila\\ApiOdontoPrev\\OdontoPrev.csproj": {
+    "C:\\Users\\Átila\\OneDrive\\Área de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\workstation\\Documents\\Átila\\ApiOdontoPrev\\OdontoPrev.csproj",
+        "projectUniqueName": "C:\\Users\\Átila\\OneDrive\\Área de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj",
         "projectName": "OdontoPrev",
-        "projectPath": "C:\\Users\\workstation\\Documents\\Átila\\ApiOdontoPrev\\OdontoPrev.csproj",
-        "packagesPath": "C:\\Users\\workstation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\workstation\\Documents\\Átila\\ApiOdontoPrev\\obj\\",
+        "projectPath": "C:\\Users\\Átila\\OneDrive\\Área de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj",
+        "packagesPath": "C:\\Users\\Átila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Átila\\OneDrive\\Área de Trabalho\\Sprint4\\ApiOdontoPrev\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\workstation\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Átila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
