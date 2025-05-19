@@ -51,6 +51,22 @@ namespace OdontoPrev.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Bairro")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Cep")
+                        .HasMaxLength(9)
+                        .HasColumnType("NVARCHAR2(9)");
+
+                    b.Property<string>("Cidade")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Estado")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Logradouro")
+                        .HasColumnType("NVARCHAR2(2000)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)

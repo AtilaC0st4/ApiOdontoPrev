@@ -4,94 +4,16 @@
         <name>OdontoPrev</name>
     </assembly>
     <members>
-        <member name="M:OdontoPrev.Controllers.UsersController.GetUsers">
-            <summary>
-            Obtém todos os usuários.
-            </summary>
-            <returns>Uma lista de usuários.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.UsersController.GetUser(System.Int32)">
-            <summary>
-            Obtém um usuário pelo ID.
-            </summary>
-            <param name="id">O ID do usuário.</param>
-            <returns>O usuário correspondente ao ID.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.UsersController.PostUser(User)">
-            <summary>
-            Cria um novo usuário.
-            </summary>
-            <param name="user">Os dados do usuário a ser criado.</param>
-            <returns>O usuário criado.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.UsersController.PutUser(System.Int32,User)">
-            <summary>
-            Atualiza um usuário existente pelo ID.
-            </summary>
-            <param name="id">O ID do usuário a ser atualizado.</param>
-            <param name="updatedUser">Os dados atualizados do usuário.</param>
-            <returns>O usuário atualizado.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.UsersController.DeleteUser(System.Int32)">
-            <summary>
-            Exclui um usuário pelo ID.
-            </summary>
-            <param name="id">O ID do usuário a ser excluído.</param>
-            <returns>Nenhum conteúdo.</returns>
-        </member>
-        <member name="M:OdontoPrev.Controllers.UsersController.GetUserLevel(System.Int32)">
-            <summary>
-            Obtém o nível de um usuário com base nos pontos.
-            </summary>
-            <param name="id">O ID do usuário.</param>
-            <returns>O nível do usuário calculado com base nos pontos.</returns>
-        </member>
-        <member name="T:OdontoPrev.Migrations.inicialMigration">
+        <member name="T:OdontoPrev.Migrations.AddAddressFieldsToUser">
             <inheritdoc />
         </member>
-        <member name="M:OdontoPrev.Migrations.inicialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:OdontoPrev.Migrations.AddAddressFieldsToUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:OdontoPrev.Migrations.inicialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:OdontoPrev.Migrations.AddAddressFieldsToUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:OdontoPrev.Migrations.inicialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:OdontoPrev.Migrations.InitialCreate">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:OdontoPrev.Migrations.atualizada">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.atualizada.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.atualizada.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.atualizada.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:OdontoPrev.Migrations.AtualizarBrushingRecordAndUser">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.AtualizarBrushingRecordAndUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.AtualizarBrushingRecordAndUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:OdontoPrev.Migrations.AtualizarBrushingRecordAndUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:OdontoPrev.Migrations.AddAddressFieldsToUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

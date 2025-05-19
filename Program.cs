@@ -67,6 +67,9 @@ public class Program
             ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection")
         });
 
+        builder.Services.AddHttpClient<ViaCepService>();
+
+
         var app = builder.Build();
 
         // Habilita o CORS antes de outras configurações de pipeline

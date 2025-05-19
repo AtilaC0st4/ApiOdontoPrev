@@ -12,8 +12,8 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace OdontoPrev.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250319232655_atualizada")]
-    partial class atualizada
+    [Migration("20250518235005_AddAddressFieldsToUser")]
+    partial class AddAddressFieldsToUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,23 +36,39 @@ namespace OdontoPrev.Migrations
                     b.Property<DateTime>("BrushingTime")
                         .HasColumnType("TIMESTAMP(7)");
 
-                    b.Property<string>("Period")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("NVARCHAR2(10)");
+                    b.Property<int>("UserId")
+                        .HasColumnType("NUMBER(10)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("BrushingRecords");
                 });
 
-            modelBuilder.Entity("OdontoPrev.Models.User", b =>
+            modelBuilder.Entity("User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("NUMBER(10)");
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Bairro")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Cep")
+                        .HasMaxLength(9)
+                        .HasColumnType("NVARCHAR2(9)");
+
+                    b.Property<string>("Cidade")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Estado")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Logradouro")
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -65,6 +81,22 @@ namespace OdontoPrev.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OdontoPrev.Models.BrushingRecord", b =>
+                {
+                    b.HasOne("User", "User")
+                        .WithMany("BrushingRecords")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("User", b =>
+                {
+                    b.Navigation("BrushingRecords");
                 });
 #pragma warning restore 612, 618
         }
