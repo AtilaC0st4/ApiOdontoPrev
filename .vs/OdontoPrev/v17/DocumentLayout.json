@@ -3,52 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518235005_AddAddressFieldsToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250518235005_AddAddressFieldsToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.g.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.g.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.g.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\obj\\odontoprev.tests.csproj.nuget.g.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\controllers\\userscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\controllers\\userscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.tests\\controllers\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.tests\\controllers\\userscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\models\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\models\\brushingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:models\\brushingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\dtos\\brushingrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:dtos\\brushingrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518234606_AddAddressFieldsToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250518234606_AddAddressFieldsToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\services\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:services\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:controllers\\brushingrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|c:\\users\\\u00E1tila\\onedrive\\\u00E1rea de trabalho\\sprint4\\apiodontoprev\\odontoprev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{49499424-FB20-4FB6-88FF-B0259714E0F1}|OdontoPrev.csproj|solutionrelative:odontoprev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,163 +82,224 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250518235005_AddAddressFieldsToUser.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518235005_AddAddressFieldsToUser.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250518235005_AddAddressFieldsToUser.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518235005_AddAddressFieldsToUser.cs",
-              "RelativeToolTip": "Migrations\\20250518235005_AddAddressFieldsToUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABfAAAA",
+              "DocumentIndex": 2,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\AppSettings.cs",
+              "RelativeDocumentMoniker": "AppSettings.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\AppSettings.cs",
+              "RelativeToolTip": "AppSettings.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:50:05.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:46:29.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OdontoPrev.Tests.csproj.nuget.dgspec.json",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.dgspec.json",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.dgspec.json",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.dgspec.json",
+              "RelativeToolTip": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.dgspec.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T15:46:11.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OdontoPrev.Tests.csproj.nuget.g.props",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.props",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.props",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.props",
+              "RelativeToolTip": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.props",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-19T15:46:09.169Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BrushingRecord.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
-              "RelativeDocumentMoniker": "Models\\BrushingRecord.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
-              "RelativeToolTip": "Models\\BrushingRecord.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
+              "Title": "OdontoPrev.Tests.csproj.nuget.g.targets",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.targets",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.targets",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.targets",
+              "RelativeToolTip": "OdontoPrev.Tests\\obj\\OdontoPrev.Tests.csproj.nuget.g.targets",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-19T15:46:07.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "OdontoPrev.Tests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:40:54.41Z",
+              "WhenOpened": "2025-05-19T15:45:58.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "20250518234606_AddAddressFieldsToUser.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518234606_AddAddressFieldsToUser.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250518234606_AddAddressFieldsToUser.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Migrations\\20250518234606_AddAddressFieldsToUser.cs",
-              "RelativeToolTip": "Migrations\\20250518234606_AddAddressFieldsToUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:46:06.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ViaCepService.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Services\\ViaCepService.cs",
-              "RelativeDocumentMoniker": "Services\\ViaCepService.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Services\\ViaCepService.cs",
-              "RelativeToolTip": "Services\\ViaCepService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:33:15.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViaCepResponse.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\ViaCepResponse.cs",
-              "RelativeDocumentMoniker": "Models\\ViaCepResponse.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\ViaCepResponse.cs",
-              "RelativeToolTip": "Models\\ViaCepResponse.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwBAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:22:24.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T00:07:49.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:45:28.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwEcAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "BrushingRecord.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
+              "RelativeDocumentMoniker": "Models\\BrushingRecord.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\BrushingRecord.cs",
+              "RelativeToolTip": "Models\\BrushingRecord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:19:44.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:45:25.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:08:39.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAA9wNoAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:02:35.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BrushingRecordsController.cs",
-              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BrushingRecordsController.cs",
-              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
-              "RelativeToolTip": "Controllers\\BrushingRecordsController.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAAAIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:01:25.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "BrushingRecordDto.cs",
               "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\DTOs\\BrushingRecordDto.cs",
               "RelativeDocumentMoniker": "DTOs\\BrushingRecordDto.cs",
               "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\DTOs\\BrushingRecordDto.cs",
               "RelativeToolTip": "DTOs\\BrushingRecordDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:00:23.339Z",
+              "WhenOpened": "2025-05-19T15:45:17.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BrushingRecordsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BrushingRecordsController.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\BrushingRecordsController.cs",
+              "RelativeToolTip": "Controllers\\BrushingRecordsController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:44:58.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAiwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:42:27.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:38:43.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T15:27:13.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OdontoPrev",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj",
+              "RelativeDocumentMoniker": "OdontoPrev.csproj",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.csproj",
+              "RelativeToolTip": "OdontoPrev.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-19T15:27:04.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\Controllers\\UsersControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\Controllers\\UsersControllerIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\Controllers\\UsersControllerIntegrationTests.cs",
+              "RelativeToolTip": "OdontoPrev.Tests\\Controllers\\UsersControllerIntegrationTests.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:14:23.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\Controllers\\UsersControllerTests.cs",
+              "RelativeDocumentMoniker": "OdontoPrev.Tests\\Controllers\\UsersControllerTests.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\OdontoPrev.Tests\\Controllers\\UsersControllerTests.cs",
+              "RelativeToolTip": "OdontoPrev.Tests\\Controllers\\UsersControllerTests.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:31:12.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
               "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\DTOs\\UserDto.cs",
               "RelativeToolTip": "DTOs\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T19:59:40.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:08:15.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViaCepResponse.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\ViaCepResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ViaCepResponse.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Models\\ViaCepResponse.cs",
+              "RelativeToolTip": "Models\\ViaCepResponse.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:06:30.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\\u00C1tila\\OneDrive\\\u00C1rea de Trabalho\\Sprint4\\ApiOdontoPrev\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAUwNwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:02:35.731Z"
             }
           ]
         }
