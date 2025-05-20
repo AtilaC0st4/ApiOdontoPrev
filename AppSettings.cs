@@ -2,7 +2,7 @@
 {
     public class AppSettings
     {
-        public string ConnectionString { get; set; }
+        public required  string ConnectionString { get; set; }
     }
 
 }

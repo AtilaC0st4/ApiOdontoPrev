@@ -1,17 +1,16 @@
 ﻿using Xunit;
-using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net.Http;
 using System.Threading.Tasks;
-using OdontoPrev;
 using System.Net;
 using Newtonsoft.Json;
 using OdontoPrev.Dtos;
+using System.Net.Http.Json;
 
-public class UsersControllerIntegrationTests : IClassFixture<WebApplicationFactory<Program>>
+public class UsersControllerIntegrationTests : IClassFixture<CustomWebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
 
-    public UsersControllerIntegrationTests(WebApplicationFactory<Program> factory)
+    public UsersControllerIntegrationTests(CustomWebApplicationFactory<Program> factory)
     {
         _client = factory.CreateClient();
     }
@@ -19,19 +18,27 @@ public class UsersControllerIntegrationTests : IClassFixture<WebApplicationFacto
     [Fact]
     public async Task GetUser_ReturnsUser_WhenUserExists()
     {
-        // Arrange
-        var userId = 1;
+        var newUser = new UserDto
+        {
+            Name = "João Teste",
+            Points = 100,
+            Cep = "01001000"
+        };
 
-        // Act
-        var response = await _client.GetAsync($"/api/users/{userId}");
+        var postResponse = await _client.PostAsJsonAsync("/api/users", newUser);
+        postResponse.EnsureSuccessStatusCode();
 
-        // Assert
-        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        var createdJson = await postResponse.Content.ReadAsStringAsync();
+        var createdUser = JsonConvert.DeserializeObject<UserDto>(createdJson);
 
-        var jsonString = await response.Content.ReadAsStringAsync();
+        var getResponse = await _client.GetAsync($"/api/users/{createdUser.Id}");
+        Assert.Equal(HttpStatusCode.OK, getResponse.StatusCode);
+
+        var jsonString = await getResponse.Content.ReadAsStringAsync();
         var userDto = JsonConvert.DeserializeObject<UserDto>(jsonString);
 
         Assert.NotNull(userDto);
-        Assert.Equal(userId, userDto.Id);
+        Assert.Equal(createdUser.Id, userDto.Id);
+        Assert.Equal(newUser.Name, userDto.Name);
     }
 }
