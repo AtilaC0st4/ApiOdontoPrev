@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using OdontoPrev.Data;
 using OdontoPrev.Dtos;
 using OdontoPrev.Models;
+using OdontoPrev.Services;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net.Http.Json;
 
@@ -15,11 +16,15 @@ namespace OdontoPrev.Controllers
     {
         private readonly AppDbContext _context;
         private readonly HttpClient _httpClient;
+        private readonly MlModelService _mlService;
+        private readonly MotivationService _motivationService;
 
         public UsersController(AppDbContext context, IHttpClientFactory httpClientFactory)
         {
             _context = context;
             _httpClient = httpClientFactory.CreateClient();
+            _mlService = new MlModelService(); // ou usar DI se preferir
+            _motivationService = new MotivationService();
         }
 
         [HttpGet]
@@ -28,14 +33,10 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
         {
-            var users = await _context.Users
-                                      .Include(u => u.BrushingRecords)
-                                      .ToListAsync();
+            var users = await _context.Users.Include(u => u.BrushingRecords).ToListAsync();
 
             if (!users.Any())
-            {
                 return NotFound("Nenhum usuário encontrado.");
-            }
 
             var userDtos = users.Select(user => new UserDto
             {
@@ -64,14 +65,10 @@ namespace OdontoPrev.Controllers
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<ActionResult<UserDto>> GetUser(int id)
         {
-            var user = await _context.Users
-                                     .Include(u => u.BrushingRecords)
-                                     .FirstOrDefaultAsync(u => u.Id == id);
+            var user = await _context.Users.Include(u => u.BrushingRecords).FirstOrDefaultAsync(u => u.Id == id);
 
             if (user == null)
-            {
                 return NotFound("Usuário não encontrado.");
-            }
 
             var userDto = new UserDto
             {
@@ -101,9 +98,7 @@ namespace OdontoPrev.Controllers
         public async Task<ActionResult<UserDto>> PostUser([FromBody] UserDto userDto)
         {
             if (userDto == null || string.IsNullOrWhiteSpace(userDto.Cep))
-            {
                 return BadRequest("Os dados do usuário ou o CEP são inválidos.");
-            }
 
             ViaCepResponse endereco;
             try
@@ -112,9 +107,7 @@ namespace OdontoPrev.Controllers
                 endereco = await _httpClient.GetFromJsonAsync<ViaCepResponse>(viaCepUrl);
 
                 if (endereco == null || string.IsNullOrEmpty(endereco.Cep))
-                {
                     return BadRequest("CEP inválido ou não encontrado.");
-                }
             }
             catch
             {
@@ -152,22 +145,18 @@ namespace OdontoPrev.Controllers
         }
 
         [HttpPut("{id}")]
-        [SwaggerOperation(Summary = "Atualizar um usuário pelo ID", Description = "Atualiza os dados de um usuário existente com base no ID fornecido.")]
+        [SwaggerOperation(Summary = "Atualizar um usuário pelo ID", Description = "Atualiza os dados de um usuário existente.")]
         [ProducesResponseType(200, Type = typeof(User))]
         [ProducesResponseType(400, Type = typeof(string))]
         [ProducesResponseType(404, Type = typeof(string))]
         public async Task<ActionResult<User>> PutUser(int id, User updatedUser)
         {
             if (id != updatedUser.Id)
-            {
                 return BadRequest("O ID da rota não corresponde ao ID do usuário.");
-            }
 
             var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (existingUser == null)
-            {
                 return NotFound("Usuário não encontrado.");
-            }
 
             existingUser.Name = updatedUser.Name;
             existingUser.Points = updatedUser.Points;
@@ -178,7 +167,6 @@ namespace OdontoPrev.Controllers
             existingUser.Estado = updatedUser.Estado;
 
             await _context.SaveChangesAsync();
-
             return Ok(existingUser);
         }
 
@@ -190,13 +178,10 @@ namespace OdontoPrev.Controllers
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
-            {
                 return NotFound("Usuário não encontrado.");
-            }
 
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
-
             return NoContent();
         }
 
@@ -208,13 +193,39 @@ namespace OdontoPrev.Controllers
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
-            {
                 return NotFound("Usuário não encontrado.");
-            }
 
             return Ok(user.Level);
         }
-    }
 
-    
+        [HttpGet("{id}/predict-behavior")]
+        [SwaggerOperation(Summary = "Prever o comportamento do usuário", Description = "Utiliza IA para prever se o usuário continuará ativo com base nos registros de escovação.")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404, Type = typeof(string))]
+        public IActionResult PredictUserBehavior(int id)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+                return NotFound("Usuário não encontrado.");
+
+            var last7Days = DateTime.Now.AddDays(-7);
+            var brushingCount = _context.BrushingRecords
+                .Count(r => r.UserId == id && r.BrushingTime >= last7Days);
+
+            var prediction = _mlService.Predict(user.Points, brushingCount);
+            var message = _motivationService.GenerateMessage(user.Level, brushingCount, user.Points);
+
+            return Ok(new
+            {
+                user.Id,
+                user.Name,
+                Level = user.Level,
+                Points = user.Points,
+                WeeklyBrushingCount = brushingCount,
+                WillStayActive = prediction.Prediction,
+                Probability = prediction.Probability,
+                Message = message
+            });
+        }
+    }
 }
